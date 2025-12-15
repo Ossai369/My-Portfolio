@@ -1,0 +1,354 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic page metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Academic portfolio of Godson Ossai — Physics Graduate and Computational Materials Scientist." />
+    <title>Godson Ossai | Portfolio</title>
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Accessible skip link to quickly jump to main content -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ===== NAVIGATION BAR ===== -->
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Main">
+            <div class="nav-brand">
+                <a href="#hero" class="brand">Godson Ossai</a>
+            </div>
+            <!-- Mobile menu toggle button -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="navLinks">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <!-- Navigation links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN CONTENT WRAPPER ===== -->
+    <main id="main">
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero" id="hero" aria-label="Introduction">
+            <div class="container hero-content">
+                <h1 class="hero-title">Uche Godson Ossai</h1>
+                <p class="hero-subtitle">Physics Graduate | Computational Materials Science | Interdisciplinary
+                    Technologist</p>
+                <p class="hero-summary">
+                    I am a physics graduate with a strong focus on computational materials science. My work centers on
+                    electronic
+                    structure calculations, defect engineering in 2D materials, and corrosion studies in metals,
+                    supported by
+                    robust Python automation and reproducible research practices.
+                </p>
+                <div class="hero-actions">
+                    <!-- Button to jump to projects -->
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="cv/Godson_Ossai_CV.pdf" class="btn btn-outline" target="_blank" rel="noopener">Download
+                        CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT ME ===== -->
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <h2 class="section-title" id="about-title">About Me</h2>
+                <p class="section-text">
+                    I hold a background in physics with concentrated experience in computational materials science. I am
+                    particularly interested in applying density functional theory to study electronic structure, defects
+                    in
+                    two-dimensional materials, and the corrosion behavior of metals. My research approach combines
+                    rigorous
+                    simulation, methodical analysis, and clear documentation, supported by Python-driven automation and
+                    version-controlled workflows. I am keen to pursue graduate studies where I can contribute to
+                    research in
+                    computational materials and interdisciplinary physics.
+                </p>
+            </div>
+        </section>
+
+        <!-- ===== SKILLS ===== -->
+        <section class="section" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 class="section-title" id="skills-title">Skills</h2>
+
+                <div class="skills-grid">
+                    <!-- Computational & Physics -->
+                    <div class="skills-card">
+                        <h3 class="skills-heading">Computational &amp; Physics</h3>
+                        <ul class="skills-list">
+                            <li>Density Functional Theory (DFT)</li>
+                            <li>Quantum ESPRESSO</li>
+                            <li>ASE / pymatgen</li>
+                            <li>Band structure and DOS analysis</li>
+                            <li>Defects and 2D materials</li>
+                        </ul>
+                    </div>
+                    <!-- Programming & Tools -->
+                    <div class="skills-card">
+                        <h3 class="skills-heading">Programming &amp; Tools</h3>
+                        <ul class="skills-list">
+                            <li>Python</li>
+                            <li>Bash / Linux</li>
+                            <li>Git &amp; GitHub</li>
+                            <li>Automation scripting</li>
+                        </ul>
+                    </div>
+                    <!-- Engineering & Web -->
+                    <div class="skills-card">
+                        <h3 class="skills-heading">Engineering &amp; Web</h3>
+                        <ul class="skills-list">
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>Electrical system design</li>
+                            <li>Technical documentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS ===== -->
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 class="section-title" id="projects-title">Projects</h2>
+
+                <!-- Simple category filter controls -->
+                <div class="filters">
+                    <!-- Use data-filter to match project categories -->
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter-btn" data-filter="Computational Physics" aria-pressed="false">Computational
+                        Physics</button>
+                    <button class="filter-btn" data-filter="Web Development" aria-pressed="false">Web
+                        Development</button>
+                    <button class="filter-btn" data-filter="Electrical Design" aria-pressed="false">Electrical
+                        Design</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Card 1 -->
+                    <article class="project-card" data-category="Computational Physics">
+                        <div class="project-header">
+                            <h3 class="project-title">DFT Study of Transition Metal Dichalcogenides (TMDCs)</h3>
+                            <span class="project-tag">Computational Physics</span>
+                        </div>
+                        <p class="project-desc">
+                            Systematic DFT investigations of TMDC monolayers focusing on band structures, density of
+                            states, and
+                            structure-property relationships to identify trends guiding device applications.
+                        </p>
+                        <p class="project-tools"><strong>Tools:</strong> Quantum ESPRESSO, ASE, pymatgen, Python</p>
+                        <div class="project-actions">
+                            <a class="btn btn-sm btn-primary" href="#" target="_blank" rel="noopener">View Details</a>
+                            <a class="btn btn-sm btn-outline" href="https://github.com/username/tmdc-dft"
+                                target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="project-card" data-category="Computational Physics">
+                        <div class="project-header">
+                            <h3 class="project-title">DFT-Based Corrosion Study of Cu, Ni, and Co</h3>
+                            <span class="project-tag">Computational Physics</span>
+                        </div>
+                        <p class="project-desc">
+                            Electronic structure and surface stability analysis for copper, nickel, and cobalt to
+                            understand
+                            corrosion mechanisms and passivation behavior under varying environmental conditions.
+                        </p>
+                        <p class="project-tools"><strong>Tools:</strong> Quantum ESPRESSO, Python, Matplotlib</p>
+                        <div class="project-actions">
+                            <a class="btn btn-sm btn-primary" href="#" target="_blank" rel="noopener">View Details</a>
+                            <a class="btn btn-sm btn-outline" href="https://github.com/username/corrosion-dft"
+                                target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="project-card" data-category="Computational Physics">
+                        <div class="project-header">
+                            <h3 class="project-title">Automated TMDC Structure Manipulation using ASE and pymatgen</h3>
+                            <span class="project-tag">Computational Physics</span>
+                        </div>
+                        <p class="project-desc">
+                            Python automation toolkit for generating, modifying, and analyzing TMDC structures, enabling
+                            rapid
+                            reproducible workflows for defect engineering and high-throughput calculations.
+                        </p>
+                        <p class="project-tools"><strong>Tools:</strong> ASE, pymatgen, NumPy, Git</p>
+                        <div class="project-actions">
+                            <a class="btn btn-sm btn-primary" href="#" target="_blank" rel="noopener">View Details</a>
+                            <a class="btn btn-sm btn-outline" href="https://github.com/username/tmdc-automation"
+                                target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="project-card" data-category="Web Development">
+                        <div class="project-header">
+                            <h3 class="project-title">Responsive Web Development Project</h3>
+                            <span class="project-tag">Web Development</span>
+                        </div>
+                        <p class="project-desc">
+                            Mobile-first, accessible website emphasizing clean typography, structured content, and
+                            minimal
+                            interaction patterns suitable for academic portfolios and research presentations.
+                        </p>
+                        <p class="project-tools"><strong>Tools:</strong> HTML, CSS, JavaScript, GitHub Pages</p>
+                        <div class="project-actions">
+                            <a class="btn btn-sm btn-primary" href="#" target="_blank" rel="noopener">View Details</a>
+                            <a class="btn btn-sm btn-outline" href="https://github.com/username/responsive-web"
+                                target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="project-card" data-category="Electrical Design">
+                        <div class="project-header">
+                            <h3 class="project-title">Electrical Power System Design Project</h3>
+                            <span class="project-tag">Electrical Design</span>
+                        </div>
+                        <p class="project-desc">
+                            Planning and design of small-scale electrical power systems with attention to safety,
+                            reliability,
+                            and documentation practices that meet technical standards and practical deployment needs.
+                        </p>
+                        <p class="project-tools"><strong>Tools:</strong> Circuit design tools, Technical documentation
+                        </p>
+                        <div class="project-actions">
+                            <a class="btn btn-sm btn-primary" href="#" target="_blank" rel="noopener">View Details</a>
+                            <a class="btn btn-sm btn-outline" href="https://github.com/username/electrical-design"
+                                target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== RESEARCH INTERESTS ===== -->
+        <section class="section" id="research" aria-labelledby="research-title">
+            <div class="container">
+                <h2 class="section-title" id="research-title">Research Interests</h2>
+                <div class="research-grid">
+                    <div class="research-item">
+                        <h3 class="research-heading">Computational Materials Science</h3>
+                        <p class="section-text">
+                            Developing computational approaches to understand and predict materials behavior, focusing
+                            on structure,
+                            stability, and performance in technologically relevant contexts. Emphasis on reproducible
+                            workflows and
+                            robust methodological design.
+                        </p>
+                    </div>
+                    <div class="research-item">
+                        <h3 class="research-heading">Electronic Structure Theory</h3>
+                        <p class="section-text">
+                            Applying DFT and related methods to examine band structures, density of states, and surface
+                            phenomena.
+                            Interested in exploring methodological improvements and their impact on physical
+                            interpretation.
+                        </p>
+                    </div>
+                    <div class="research-item">
+                        <h3 class="research-heading">2D Materials &amp; Defect Engineering</h3>
+                        <p class="section-text">
+                            Investigating defect formation, migration, and their effects on electronic properties of 2D
+                            materials
+                            such as TMDCs. Focused on linking defect physics with device-level characteristics.
+                        </p>
+                    </div>
+                    <div class="research-item">
+                        <h3 class="research-heading">Interdisciplinary Physics Research</h3>
+                        <p class="section-text">
+                            Bridging physics, materials science, and engineering by integrating computation, analysis,
+                            and design.
+                            Motivated by collaborative research that translates theory to practical outcomes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section class="section" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 class="section-title" id="contact-title">Contact</h2>
+                <div class="contact-grid">
+                    <!-- Contact details -->
+                    <div class="contact-info">
+                        <ul class="contact-list">
+                            <li><strong>Email:</strong> <a
+                                    href="mailto:ossaigodson2@gmail.com">ossaigodson2@gmail.com</a></li>
+                            <li><strong>GitHub:</strong> <a href="https://github.com/username" target="_blank"
+                                    rel="noopener">github.com/username</a></li>
+                            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/uche-ossai-17b321322/"
+                                    target="_blank" rel="noopener">https://www.linkedin.com/in/uche-ossai</a></li>
+                            <li><strong>Google Scholar:</strong> <a
+                                    href="https://scholar.google.com/citations?user=XXXXXX" target="_blank"
+                                    rel="noopener">Google Scholar</a></li>
+                        </ul>
+                        <p class="section-text">
+                            I welcome academic collaboration opportunities and prospective graduate research
+                            discussions.
+                            Please reach out via email or the form.
+                        </p>
+                    </div>
+
+                    <!-- Simple contact form (no backend) -->
+                    <form class="contact-form" id="contactForm" action="#" method="post" novalidate>
+                        <!-- Helpful, accessible labels -->
+                        <div class="form-row">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                        </div>
+                        <div class="form-row">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject of your message"
+                                required />
+                        </div>
+                        <div class="form-row">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message..."
+                                required></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p class="footer-name">Godson Ossai</p>
+            <p class="footer-tagline">"Advancing computational materials science through rigorous, reproducible
+                research."</p>
+            <p class="footer-copy">&copy; <span id="year"></span> Godson Ossai. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+    <script defer src="script.js"></script>
+</html>
